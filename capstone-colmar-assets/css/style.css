@@ -1,0 +1,48 @@
+html  {
+  font-family: arial, sans-serif;
+  font-style: normal;
+}
+
+body  {
+  background-color: lightgrey;
+  width: 1200px
+  margin: 0 auto;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* HEADER STYLING*/
+
+header  {
+  width: 100%;
+  height: 64px;
+  background-color: white;
+  display: inline-block;
+}
+
+.logo-container {
+  height: 32px;
+  text-align: left;
+  font-size: 20px;
+  align-items: center;
+}
+
+.bold-black {
+  font-weight: bold;
+}
+
+.light-grey {
+  font-weight: 200;
+  color: grey;
+}
+
+.menu-bar {
+  justify-content: flex-end;
+}
