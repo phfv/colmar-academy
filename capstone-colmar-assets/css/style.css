@@ -1,12 +1,25 @@
 html  {
   font-family: arial, sans-serif;
   font-style: normal;
+  font-size: 20px;
 }
 
 body  {
   background-color: lightgrey;
   width: 1200px
   margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4  {
+  color: #454545;
+}
+
+h1  {
+  font-size: 42px;
+  font-weight: bold;
 }
 
 .image-container img {
@@ -24,14 +37,26 @@ header  {
   width: 100%;
   height: 64px;
   background-color: white;
+}
+
+header img  {
+  height: 44px;
+  display: inline;
+}
+
+header .flex-container  {
+  justify-content: space-between;
+}
+
+li {
   display: inline-block;
 }
 
 .logo-container {
   height: 32px;
-  text-align: left;
   font-size: 20px;
-  align-items: center;
+  display: inline;
+  margin-left: 24px;
 }
 
 .bold-black {
@@ -39,10 +64,35 @@ header  {
 }
 
 .light-grey {
-  font-weight: 200;
+  font-weight: 100;
   color: grey;
+  opacity: 0.9;
 }
 
-.menu-bar {
-  justify-content: flex-end;
+/*Banner Style*/
+
+#banner .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#banner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 30%;
+}
+
+#banner .image-container  {
+  max-width: 60%;
+  margin: 32px 24px;
+}
+
+#banner .button {
+  text-align: center;
+  color: white;
+  background-color: #454545;
+  width: 80%;
+  padding: 8px;
+  margin-top: 30px;
 }
