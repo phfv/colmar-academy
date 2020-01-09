@@ -1,13 +1,14 @@
 html  {
   font-family: arial, sans-serif;
   font-style: normal;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 body  {
-  background-color: lightgrey;
-  width: 1200px
+  background-color: #EDF5F4;
+  width: 1124px;
   margin: 0 auto;
+  border: 1px solid darkgrey;
 }
 
 h1,
@@ -18,7 +19,7 @@ h4  {
 }
 
 h1  {
-  font-size: 42px;
+  font-size: 2.3rem;
   font-weight: bold;
 }
 
@@ -31,7 +32,16 @@ h1  {
   display: flex;
 }
 
-/* HEADER STYLING*/
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+/* Header Style*/
 
 header  {
   width: 100%;
@@ -48,8 +58,13 @@ header .flex-container  {
   justify-content: space-between;
 }
 
+nav ul  {
+  padding-right: 24px;
+}
+
 li {
   display: inline-block;
+  padding: 0 8px;
 }
 
 .logo-container {
@@ -71,9 +86,8 @@ li {
 
 /*Banner Style*/
 
-#banner .container {
-  display: flex;
-  justify-content: space-around;
+#banner {
+  background-color: lightgrey;
 }
 
 #banner .content {
@@ -92,7 +106,33 @@ li {
   text-align: center;
   color: white;
   background-color: #454545;
-  width: 80%;
+  width: 100%;
   padding: 8px;
   margin-top: 30px;
+  text-decoration: none;
+}
+
+/* Information Style */
+
+#information .left-side {
+  max-width: 60%;
+}
+
+.left-side {
+  margin: 32px 24px;
+}
+
+#information .right-side {
+  display: flex;
+  max-width: 40%;
+}
+
+#information .box {
+  border: 1px solid #E8DBDB ;
+}
+
+#information .right-side .image-container {
+  max-width: 35%;
+  height: auto;
+  margin: 16px;
 }
