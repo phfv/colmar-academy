@@ -38,6 +38,7 @@ p {
   font-size: 0.85rem;
 }
 
+.image-container video,
 .image-container img {
   display: block;
   width: 100%;
@@ -132,7 +133,7 @@ li {
 
 /* Information Style */
 
-.left-side {
+#information .left-side {
   max-width: 60%;
   margin: 32px 24px;
 }
@@ -191,6 +192,34 @@ li {
   margin: 4px 0px;
 }
 
-#learning .content {
+/* Thesis Style */
 
+#thesis h1  {
+  text-align: center;
+  padding: 32px 0px 32px 0px;
+  margin: 0;
+}
+
+#thesis .left-side  {
+  max-width: 60%;
+  margin: 0px 24px 32px 24px;
+}
+
+#thesis .right-side {
+  display: flex;
+  max-width: 40%;
+}
+
+#thesis .box {
+  border: 1px solid #E8DBDB;
+}
+
+#thesis .right-side .image-container {
+  max-width: 35%;
+  height: auto;
+  margin: 16px;
+}
+
+#thesis .content {
+  margin: auto 0;
 }
