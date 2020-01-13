@@ -60,7 +60,7 @@ p {
 .blue {
   color: blue;
 }
-/* Header Style*/
+/* Header Style */
 
 header  {
   width: 100%;
@@ -68,29 +68,28 @@ header  {
   background-color: white;
 }
 
-header img  {
-  height: 44px;
-  display: inline;
-}
-
-header .flex-container  {
+header .inline  {
+  width: 100%;
   justify-content: space-between;
 }
 
-nav ul  {
-  padding-right: 24px;
+header .logo  {
+  align-items: center;
+  font-size: 1.3rem;
 }
 
-li {
+header img  {
+  padding-left: 24px;
+  height: 38px;
+}
+
+li  {
   display: inline-block;
-  padding: 0 8px;
+  padding: 0px 8px;
 }
 
-.logo-container {
-  height: 32px;
-  font-size: 20px;
-  display: inline;
-  margin-left: 24px;
+header nav  {
+  margin-right: 16px;
 }
 
 .bold-black {
@@ -122,13 +121,22 @@ li {
 }
 
 #banner .button {
-  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+#banner a {
   color: white;
+  padding: 8px 120px;
+  text-decoration: none;
+}
+
+#banner .button {
+  text-align: center;
   background-color: #454545;
   width: 100%;
   padding: 8px;
   margin-top: 30px;
-  text-decoration: none;
 }
 
 /* Information Style */
@@ -145,6 +153,11 @@ li {
 
 #information .box {
   border: 1px solid #E8DBDB;
+  transition: all linear;
+}
+
+#information .box:hover {
+  background-color: lightgrey;
 }
 
 #information .right-side .image-container {
@@ -212,6 +225,11 @@ li {
 
 #thesis .box {
   border: 1px solid #E8DBDB;
+  transition: all linear;
+}
+
+#thesis .box:hover  {
+  background-color: lightgrey;
 }
 
 #thesis .right-side .image-container {
@@ -222,4 +240,25 @@ li {
 
 #thesis .content {
   margin: auto 0;
+}
+
+/* Footer sytle */
+
+footer  {
+  width: 100%;
+  border-top: 1px solid #E8DBDB;
+}
+
+footer .inline  {
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer p  {
+  margin: 16px 24px;
+}
+
+footer li {
+  font-size: 0.75rem;
+  color: #454545;
 }
